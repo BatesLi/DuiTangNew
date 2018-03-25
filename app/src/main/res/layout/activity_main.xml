@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+  <android.support.v7.widget.Toolbar android:id="@+id/toolbar_main"
+      android:layout_width="match_parent" android:layout_height="wrap_content"
+      android:background="@color/black">
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText android:id="@+id/edit_search"
+            android:layout_width="200dp" android:layout_height="wrap_content"
+            android:background="@color/dark_grey" android:drawableStart="@drawable/icon_search"
+            android:hint="搜索" android:textSize="16sp"
+            android:singleLine="true"/>
+        <TextView android:id="@+id/txt_search"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="搜索" android:textSize="16sp"
+            android:textColor="@color/colorAccent" android:layout_marginLeft="30dp"/>
+    </LinearLayout>
+  </android.support.v7.widget.Toolbar>
+  <android.support.design.widget.TabLayout android:id="@+id/tab_main"
+      android:layout_width="match_parent" android:layout_height="wrap_content">
+  </android.support.design.widget.TabLayout>
+  <android.support.v4.view.ViewPager android:id="@+id/view_pager"
+      android:layout_width="match_parent" android:layout_height="wrap_content">
+  </android.support.v4.view.ViewPager>
+
+</LinearLayout>
